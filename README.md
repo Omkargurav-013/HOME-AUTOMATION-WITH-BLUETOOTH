@@ -46,8 +46,8 @@ The Android application sends commands to Arduino via Bluetooth. Based on the re
 6. Arduino interprets them and controls LEDs accordingly.
 
 ## Output Images: 
-<img width="1592" height="1013" alt="Image" src="https://github.com/user-attachments/assets/023851eb-26a5-4298-9677-8b3b2b60c438" />
+<img width="1592" height="1013" alt="Image" src="https://github.com/user-attachments/assets/023851eb-26a5-4298-9677-8b3b2b60c438" />   
 
-<img width="1548" height="1027" alt="Image" src="https://github.com/user-attachments/assets/5a7291c7-cb1f-44d2-ba5f-d30d64a088bc" />
+<img width="1548" height="1027" alt="Image" src="https://github.com/user-attachments/assets/5a7291c7-cb1f-44d2-ba5f-d30d64a088bc" />    
 
-<img width="1576" height="1022" alt="Image" src="https://github.com/user-attachments/assets/4c838978-4aff-482b-879d-617d5c32a31d" />
+<img width="1576" height="1022" alt="Image" src="https://github.com/user-attachments/assets/4c838978-4aff-482b-879d-617d5c32a31d" />    
