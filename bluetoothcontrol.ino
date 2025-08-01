@@ -1,0 +1,35 @@
+String text = "";  // Initialize the input string
+
+void setup() {
+  pinMode(13, OUTPUT);    
+  pinMode(12, OUTPUT);   
+  Serial.begin(9600);       // Start Serial communication
+}
+
+void loop() {
+  while (Serial.available()) {
+    delay(10);              // Small delay to allow all characters to arrive
+    char c = Serial.read(); // Read incoming character
+    text += c;              // Append character to text
+  }
+
+  if (text.length() > 0) {
+    text.trim();            // Remove whitespace and newline characters
+    Serial.println("Received: " + text);  // Print received command
+
+    if (text == "LED_1_ON") {
+      digitalWrite(12, HIGH);   // Turn ON the LED
+    } 
+    else if (text == "LED_1_OFF") {
+      digitalWrite(12, LOW);    // Turn OFF the LED
+    }
+    else if (text == "LED_2_ON") {
+      digitalWrite(13, HIGH);    // Turn OFF the LED
+    }
+    else if (text == "LED_2_OFF") {
+      digitalWrite(13, LOW);    // Turn OFF the LED
+    }
+
+    text = "";  // Clear the text after processing
+  }
+}
